@@ -24,8 +24,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    tinyxml/tinyxml2.cpp \
+    dictionary.cpp \
+    xmlparser.cpp \
+    filehelper.cpp \
+    wordlinker.cpp \
+    initializer.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    tinyxml/tinyxml2.h \
+    dictionary.h \
+    xmlparser.h \
+    filehelper.h \
+    wordlinker.h \
+    initializer.h \
+    constants.h
 
 FORMS    += mainwindow.ui
