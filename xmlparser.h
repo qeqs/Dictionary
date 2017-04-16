@@ -11,7 +11,7 @@ class XmlParser
 {
 public:
     XmlParser();
-    map<long,string> get_dict(string name);
+    map<long,string>* get_dict(string name);
     void save_dict(map<long, string> dict, string name);
 };
 

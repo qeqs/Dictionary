@@ -36,8 +36,8 @@ HEADERS  += mainwindow.h \
     xmlparser.h \
     filehelper.h \
     wordlinker.h \
-    initializer.h \
-    constants.h
+    constants.h \
+    initializer.h
 
 FORMS    += mainwindow.ui
 

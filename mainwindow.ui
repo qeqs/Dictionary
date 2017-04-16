@@ -122,19 +122,19 @@
     <property name="title">
      <string>Menu</string>
     </property>
-    <addaction name="actionAdd_dictionary"/>
     <addaction name="actionCreate_new"/>
+    <addaction name="actionAdd_dictionary"/>
    </widget>
    <addaction name="menuMenu"/>
   </widget>
   <action name="actionAdd_dictionary">
    <property name="text">
-    <string>Add dictionary</string>
+    <string>Open</string>
    </property>
   </action>
   <action name="actionCreate_new">
    <property name="text">
-    <string>Create new</string>
+    <string>New</string>
    </property>
   </action>
  </widget>
