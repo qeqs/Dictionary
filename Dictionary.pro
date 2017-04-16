@@ -25,7 +25,6 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += main.cpp\
         mainwindow.cpp \
-    tinyxml/tinyxml2.cpp \
     dictionary.cpp \
     xmlparser.cpp \
     filehelper.cpp \
@@ -33,7 +32,6 @@ SOURCES += main.cpp\
     initializer.cpp
 
 HEADERS  += mainwindow.h \
-    tinyxml/tinyxml2.h \
     dictionary.h \
     xmlparser.h \
     filehelper.h \
@@ -42,3 +40,11 @@ HEADERS  += mainwindow.h \
     constants.h
 
 FORMS    += mainwindow.ui
+
+win32: LIBS += -L$$PWD/../../Desktop/tinyxml2-4.0.1/tinyxml2/bin/x64-Debug-Dll -ltinyxml2
+
+INCLUDEPATH += $$PWD/../../Desktop/tinyxml2-4.0.1
+DEPENDPATH += $$PWD/../../Desktop/tinyxml2-4.0.1
+
+win32:!win32-g++: PRE_TARGETDEPS += $$PWD/../../Desktop/tinyxml2-4.0.1/tinyxml2/bin/x64-Debug-Dll/tinyxml2.lib
+else:win32-g++: PRE_TARGETDEPS += $$PWD/../../Desktop/tinyxml2-4.0.1/tinyxml2/bin/x64-Debug-Dll/libtinyxml2.a

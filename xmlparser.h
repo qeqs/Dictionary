@@ -1,6 +1,6 @@
 #ifndef XMLPARSER_H
 #define XMLPARSER_H
-#include "tinyxml/tinyxml2.h"
+#include "tinyxml2.h"
 #include "map"
 #include "string"
 
